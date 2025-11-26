@@ -1,0 +1,22 @@
+{
+	// Default request configuration
+	"baseUrl": "https://www.searchapi.io/api/v1/search",          // Default base URL for all modules and RPCs.
+	"headers": {                                          // Default HTTP headers for all modules and RPCs.
+		"Authorization": "Bearer {{connection.apiKey}}",  // Authorization by API key, which user will provide in the connection as parameter.
+		"Content-Type": "application/json",               // Specify JSON content type for requests.
+		 "X-SearchApi-Source": "Make"    // Identify the integration in API logs. oi
+	},
+
+	// Default response handling
+	"response": {
+		"error": {                                        // Error handling
+			"message": "[{{statusCode}}] {{body.error || body.message || body.detail || 'API request failed'}}"  // Robust error message with fallbacks.
+		}
+	},
+
+	"log": {
+		"sanitize": [                                     // Excludes sensitive parameters from logs.
+			"request.headers.authorization"               // Omit HTTP header "Authorization".
+		]
+	}
+}

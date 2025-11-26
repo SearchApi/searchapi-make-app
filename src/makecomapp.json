@@ -1,0 +1,68 @@
+{
+    "fileVersion": 1,
+    "generalCodeFiles": {
+        "base": "general/base.iml.json",
+        "common": null,
+        "readme": "README.md",
+        "groups": "modules/groups.json"
+    },
+    "components": {
+        "connection": {
+            "connection1": {
+                "label": "Unnamed",
+                "connectionType": "basic",
+                "codeFiles": {
+                    "communication": "connections/connection1/connection1.communication.iml.json",
+                    "params": "connections/connection1/connection1.params.iml.json",
+                    "common": null
+                }
+            }
+        },
+        "module": {
+            "googleSearch": {
+                "label": "Google Search",
+                "description": "Search on google",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/google-search/google-search.communication.iml.json",
+                    "staticParams": "modules/google-search/google-search.static-params.iml.json",
+                    "mappableParams": "modules/google-search/google-search.mappable-params.iml.json",
+                    "interface": "modules/google-search/google-search.interface.iml.json",
+                    "samples": "modules/google-search/google-search.samples.iml.json",
+                    "scope": "modules/google-search/google-search.scope.iml.json"
+                }
+            }
+        },
+        "function": {},
+        "rpc": {},
+        "webhook": {}
+    },
+    "origins": [
+        {
+            "label": "Origin",
+            "baseUrl": "https://us2.make.com/api",
+            "appId": "searchapi-9af19k",
+            "appVersion": 1,
+            "idMapping": {
+                "connection": [
+                    {
+                        "local": "connection1",
+                        "remote": "searchapi-9af19k"
+                    }
+                ],
+                "module": [
+                    {
+                        "local": "googleSearch",
+                        "remote": "googleSearch"
+                    }
+                ],
+                "function": [],
+                "rpc": [],
+                "webhook": []
+            },
+            "apikeyFile": "../.secrets/apikey"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+	// Request to API endpoint.
+	"url": "/",                       // Relative to base URL
+	"method": "GET",
+	"headers": {},                         // Additional HTTP headers
+	"qs": {                                // Query string
+		"engine": "google",  // Parameter "search" that is defined in Mappable parameters.
+		"q": "{{parameters.q}}"  // Parameter "search" that is defined in Mappable parameters.
+	}
+}
