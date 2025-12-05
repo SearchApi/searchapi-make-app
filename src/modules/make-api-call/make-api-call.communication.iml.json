@@ -1,0 +1,8 @@
+{
+	"url": "/",
+	"method": "GET",
+	"qs": "{{merge(object('engine', parameters.engine), toCollection(parameters.parameters, 'key', 'value'))}}",
+	"response": {
+		"output": "{{body}}"
+	}
+}

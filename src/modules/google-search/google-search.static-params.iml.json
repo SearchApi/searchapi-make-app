@@ -1,7 +1,0 @@
-[
-    {
-        "name": "engine",
-        "type": "hidden",
-        "default": "google"
-    }
-]

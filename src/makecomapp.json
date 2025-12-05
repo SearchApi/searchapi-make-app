@@ -19,19 +19,19 @@
             }
         },
         "module": {
-            "googleSearch": {
-                "label": "Google Search",
-                "description": "Search on google",
-                "moduleType": "search",
+            "makeApiCall": {
+                "label": "Make an API Call",
+                "description": "Make a request to any SearchAPI endpoint",
+                "moduleType": "action",
                 "connection": "connection1",
                 "altConnection": null,
                 "codeFiles": {
-                    "communication": "modules/google-search/google-search.communication.iml.json",
-                    "staticParams": "modules/google-search/google-search.static-params.iml.json",
-                    "mappableParams": "modules/google-search/google-search.mappable-params.iml.json",
-                    "interface": "modules/google-search/google-search.interface.iml.json",
-                    "samples": "modules/google-search/google-search.samples.iml.json",
-                    "scope": "modules/google-search/google-search.scope.iml.json"
+                    "communication": "modules/make-api-call/make-api-call.communication.iml.json",
+                    "staticParams": "modules/make-api-call/make-api-call.static-params.iml.json",
+                    "mappableParams": "modules/make-api-call/make-api-call.mappable-params.iml.json",
+                    "interface": "modules/make-api-call/make-api-call.interface.iml.json",
+                    "samples": "modules/make-api-call/make-api-call.samples.iml.json",
+                    "scope": "modules/make-api-call/make-api-call.scope.iml.json"
                 }
             }
         },
@@ -54,8 +54,8 @@
                 ],
                 "module": [
                     {
-                        "local": "googleSearch",
-                        "remote": "googleSearch"
+                        "local": "makeApiCall",
+                        "remote": "makeApiCall"
                     }
                 ],
                 "function": [],

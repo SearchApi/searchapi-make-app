@@ -2,7 +2,7 @@
 	{
 		"label": "Other",
 		"modules": [
-			"googleSearch"
+			"makeApiCall"
 		]
 	}
 ]

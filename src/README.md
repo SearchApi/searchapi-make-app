@@ -27,3 +27,6 @@ For detailed API documentation and parameters, visit:
 - Website: [www.searchapi.io](https://www.searchapi.io)
 - Documentation: [searchapi.io/docs](https://www.searchapi.io/docs)
 
+
+
+
