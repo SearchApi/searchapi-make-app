@@ -1,8 +1,11 @@
 {
-	"url": "/",
-	"method": "GET",
-	"qs": "{{merge(object('engine', parameters.engine), toCollection(parameters.parameters, 'key', 'value'))}}",
-	"response": {
-		"output": "{{body}}"
-	}
+  "url": "/",
+  "method": "GET",
+  "qs": {
+    "engine": "{{parameters.engine}}",
+    "{{...}}": "{{toCollection(ifempty(parameters.parameters, emptyarray), 'key', 'value')}}"
+  },
+  "response": {
+    "output": "{{body}}"
+  }
 }
