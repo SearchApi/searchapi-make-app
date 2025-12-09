@@ -1,7 +1,60 @@
 [
     {
-        "name": "data",
-        "type": "any",
-        "label": "Data"
+        "name": "search_metadata",
+        "type": "collection",
+        "label": "Search Metadata",
+        "spec": [
+            {
+                "name": "id",
+                "type": "text",
+                "label": "ID"
+            },
+            {
+                "name": "status",
+                "type": "text",
+                "label": "Status"
+            },
+            {
+                "name": "created_at",
+                "type": "date",
+                "label": "Created At"
+            },
+            {
+                "name": "request_time_taken",
+                "type": "number",
+                "label": "Request Time Taken"
+            },
+            {
+                "name": "parsing_time_taken",
+                "type": "number",
+                "label": "Parsing Time Taken"
+            },
+            {
+                "name": "total_time_taken",
+                "type": "number",
+                "label": "Total Time Taken"
+            },
+            {
+                "name": "request_url",
+                "type": "url",
+                "label": "Request URL"
+            },
+            {
+                "name": "html_url",
+                "type": "url",
+                "label": "HTML URL"
+            },
+            {
+                "name": "json_url",
+                "type": "url",
+                "label": "JSON URL"
+            }
+        ]
+    },
+    {
+        "name": "search_parameters",
+        "type": "collection",
+        "label": "Search Parameters",
+        "spec": []
     }
 ]
