@@ -2,7 +2,9 @@
 	{
 		"label": "Other",
 		"modules": [
-			"makeApiCall"
+			"makeApiCall",
+			"makeApiCallUniversal",
+			"makeApiCallFinal"
 		]
 	}
 ]

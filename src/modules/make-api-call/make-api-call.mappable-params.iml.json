@@ -1,32 +1,19 @@
+// Defines "id", "email" and "name" as module input parameters.
 [
-    {
-        "name": "engine",
-        "type": "text",
-        "label": "Engine",
-        "help": "The search engine to use (e.g. `google`, `google_images`, `google_news`, `bing`, `youtube`, `amazon`). See [SearchAPI documentation](https://www.searchapi.io/docs) for all available engines.",
-        "required": true
-    },
-    {
-        "name": "parameters",
-        "type": "array",
-        "label": "Query Parameters",
-        "help": "Additional query parameters to send with the request.",
-        "spec": {
-            "type": "collection",
-            "spec": [
-                {
-                    "name": "key",
-                    "type": "text",
-                    "label": "Key",
-                    "required": true
-                },
-                {
-                    "name": "value",
-                    "type": "text",
-                    "label": "Value",
-                    "required": true
-                }
-            ]
-        }
-    }
+	{
+		"name": "id",        // Makes value accesible via "{{parameters.id}}".
+		"type": "uinteger",  // Sends the value as unsigned integer.
+		"label": "User ID",  // Sets the user friendly label visible in the module.
+		"required": true     // Sets the parameter as mandatory.
+	},
+	{
+		"name": "email",
+		"type": "email",
+		"label": "Email address"
+	},
+	{
+		"name": "name",
+		"type": "text",
+		"label": "Name"
+	}
 ]

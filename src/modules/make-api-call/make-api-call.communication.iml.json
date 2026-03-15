@@ -1,11 +1,13 @@
 {
-  "url": "/",
-  "method": "GET",
-  "qs": {
-    "engine": "{{parameters.engine}}",
-    "{{...}}": "{{toCollection(ifempty(parameters.parameters, emptyarray), 'key', 'value')}}"
-  },
-  "response": {
-    "output": "{{body}}"
-  }
+	// Request to API endpoint with parameter "id" defined in Mappable parameters.
+	"url": "/users/{{parameters.id}}",     // Relative to base URL
+	"method": "PUT",
+	"headers": {},                         // Additional HTTP headers
+	"qs": {},                              // Query string
+	"body": "{{omit(parameters, 'id')}}",  // Request body omitting the ID that is already being sent in URL.
+
+	// Response handling
+	"response": {
+		"output": "{{undefined}}"  // Returns no output bundle as no API output is expected.
+	}
 }

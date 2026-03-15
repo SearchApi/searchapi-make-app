@@ -1,21 +1,21 @@
 {
 	// Request
-	"url": "https://www.searchapi.io/api/v1/me",          // Absolute URL to the API endpoint which validates credentials
+	"url": "https://www.example.com/api/whoami",          // Absolute URL to the API endpoint which validates credentials
 	"headers": {                                          // Additional HTTP headers
-		"Authorization": "Bearer {{parameters.apiKey}}",  // Authorizes user by API key, provided by user during the connection creation.
-		"X-SearchApi-Source": "Make"                      // Identify the integration in API logs.
+		"Authorization": "Bearer {{parameters.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
 	},
 
 	// Response handling
 	"response": {
 		"metadata": {                                     // Adds authorized user details to the connection label.
-			"type": "text",                              // Type of the parameter. Can be "text" or "email".
-			"value": "{{body.account.remaining_credits}}"                     // The value in "email" will be displayed in connection's label.
+			"type": "email",                              // Type of the parameter. Can be "text" or "email".
+			"value": "{{body.email}}"                     // The value in "email" will be displayed in connection's label.
 		},
 		"error": {                                        // Error handling
-			"message": "[{{statusCode}}] {{body.error || body.message || body.detail || 'Authentication failed'}}"  // Robust error message with fallbacks.
+			"message": "[{{statusCode}}] {{body.error}}"  // On error, returns error message as "[statusCode] error text".
 		}
 	},
+
 	"log": {
 		"sanitize": [                                     // Excludes sensitive parameters from logs.
 			"request.headers.authorization"               // Omit HTTP header "Authorization".
