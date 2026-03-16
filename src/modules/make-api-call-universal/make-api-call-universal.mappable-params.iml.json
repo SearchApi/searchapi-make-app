@@ -1,0 +1,3361 @@
+[
+  {
+    "name": "engine",
+    "label": "Engine",
+    "type": "select",
+    "required": true,
+    "default": "google",
+    "editable": true,
+    "help": "Select a search engine. Each engine has its own parameters. You must go to the engine documentation to see all available parameters.",
+    "options": [
+      {
+        "label": "Google",
+        "value": "google",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google as key-value pairs. See all available parameters at [Google Docs](https://www.searchapi.io/docs/google).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Light",
+        "value": "google_light",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Light as key-value pairs. See all available parameters at [Google Light Docs](https://www.searchapi.io/docs/google-light-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Ads Advertiser Info",
+        "value": "google_ads_advertiser_info",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Ads Advertiser Info as key-value pairs. See all available parameters at [Google Ads Advertiser Info Docs](https://www.searchapi.io/docs/google-ads-advertiser-info-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google AI Overview",
+        "value": "google_ai_overview",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google AI Overview as key-value pairs. See all available parameters at [Google AI Overview Docs](https://www.searchapi.io/docs/google-ai-overview-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Related Questions",
+        "value": "google_related_questions",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Related Questions as key-value pairs. See all available parameters at [Google Related Questions Docs](https://www.searchapi.io/docs/google-related-questions-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google About This Domain",
+        "value": "google_about_this_domain",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google About This Domain as key-value pairs. See all available parameters at [Google About This Domain Docs](https://www.searchapi.io/docs/google-about-this-domain-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Rank Tracking",
+        "value": "google_rank_tracking",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Rank Tracking as key-value pairs. See all available parameters at [Google Rank Tracking Docs](https://www.searchapi.io/docs/google-rank-tracking-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google AI Mode",
+        "value": "google_ai_mode",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google AI Mode as key-value pairs. See all available parameters at [Google AI Mode Docs](https://www.searchapi.io/docs/google-ai-mode-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Ads Transparency",
+        "value": "google_ads_transparency_center",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Ads Transparency as key-value pairs. See all available parameters at [Google Ads Transparency Docs](https://www.searchapi.io/docs/google-ads-transparency-center-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Ads Transparency Center Advertiser Search",
+        "value": "google_ads_transparency_center_advertiser_search",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Ads Transparency Center Advertiser Search as key-value pairs. See all available parameters at [Google Ads Transparency Center Advertiser Search Docs](https://www.searchapi.io/docs/google-ads-transparency-center-advertiser-search-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Ads Transparency Center Ad Details",
+        "value": "google_ads_transparency_center_ad_details",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Ads Transparency Center Ad Details as key-value pairs. See all available parameters at [Google Ads Transparency Center Ad Details Docs](https://www.searchapi.io/docs/google-ads-transparency-center-ad-details-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Maps",
+        "value": "google_maps",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Maps as key-value pairs. See all available parameters at [Google Maps Docs](https://www.searchapi.io/docs/google-maps).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Maps Place",
+        "value": "google_maps_place",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Maps Place as key-value pairs. See all available parameters at [Google Maps Place Docs](https://www.searchapi.io/docs/google-maps-place).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Maps Reviews",
+        "value": "google_maps_reviews",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Maps Reviews as key-value pairs. See all available parameters at [Google Maps Reviews Docs](https://www.searchapi.io/docs/google-maps-reviews).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Maps Photos",
+        "value": "google_maps_photos",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Maps Photos as key-value pairs. See all available parameters at [Google Maps Photos Docs](https://www.searchapi.io/docs/google-maps-photos).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Maps Directions",
+        "value": "google_maps_directions",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Maps Directions as key-value pairs. See all available parameters at [Google Maps Directions Docs](https://www.searchapi.io/docs/google-maps-directions-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Shopping",
+        "value": "google_shopping",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Shopping as key-value pairs. See all available parameters at [Google Shopping Docs](https://www.searchapi.io/docs/google-shopping).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Product",
+        "value": "google_product",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Product as key-value pairs. See all available parameters at [Google Product Docs](https://www.searchapi.io/docs/google-product).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Product Page",
+        "value": "google_product_page",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Product Page as key-value pairs. See all available parameters at [Google Product Page Docs](https://www.searchapi.io/docs/google-product-page).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Product Offers",
+        "value": "google_product_offers",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Product Offers as key-value pairs. See all available parameters at [Google Product Offers Docs](https://www.searchapi.io/docs/google-product-offers).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Product Specs",
+        "value": "google_product_specs",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Product Specs as key-value pairs. See all available parameters at [Google Product Specs Docs](https://www.searchapi.io/docs/google-product-specifications).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Product Reviews",
+        "value": "google_product_reviews",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Product Reviews as key-value pairs. See all available parameters at [Google Product Reviews Docs](https://www.searchapi.io/docs/google-product-reviews).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Shopping Filters",
+        "value": "google_shopping_filters",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Shopping Filters as key-value pairs. See all available parameters at [Google Shopping Filters Docs](https://www.searchapi.io/docs/google-shopping-filters).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Shopping Autocomplete",
+        "value": "google_shopping_autocomplete",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Shopping Autocomplete as key-value pairs. See all available parameters at [Google Shopping Autocomplete Docs](https://www.searchapi.io/docs/google-shopping-autocomplete-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Flights",
+        "value": "google_flights",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Flights as key-value pairs. See all available parameters at [Google Flights Docs](https://www.searchapi.io/docs/google-flights-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Flights Calendar",
+        "value": "google_flights_calendar",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Flights Calendar as key-value pairs. See all available parameters at [Google Flights Calendar Docs](https://www.searchapi.io/docs/google-flights-calendar-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Flights Location Search",
+        "value": "google_flights_location_search",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Flights Location Search as key-value pairs. See all available parameters at [Google Flights Location Search Docs](https://www.searchapi.io/docs/google-flights-location-search-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Hotels",
+        "value": "google_hotels",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Hotels as key-value pairs. See all available parameters at [Google Hotels Docs](https://www.searchapi.io/docs/google-hotels-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Hotels Property",
+        "value": "google_hotels_property",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Hotels Property as key-value pairs. See all available parameters at [Google Hotels Property Docs](https://www.searchapi.io/docs/google-hotels-property-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Hotels Autocomplete",
+        "value": "google_hotels_autocomplete",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Hotels Autocomplete as key-value pairs. See all available parameters at [Google Hotels Autocomplete Docs](https://www.searchapi.io/docs/google-hotels-autocomplete-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Travel Explore",
+        "value": "google_travel_explore",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Travel Explore as key-value pairs. See all available parameters at [Google Travel Explore Docs](https://www.searchapi.io/docs/google-travel-explore-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Videos",
+        "value": "google_videos",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Videos as key-value pairs. See all available parameters at [Google Videos Docs](https://www.searchapi.io/docs/google-videos).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Videos Light",
+        "value": "google_videos_light",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Videos Light as key-value pairs. See all available parameters at [Google Videos Light Docs](https://www.searchapi.io/docs/google-videos-light-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Shorts",
+        "value": "google_shorts",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Shorts as key-value pairs. See all available parameters at [Google Shorts Docs](https://www.searchapi.io/docs/google-shorts-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Images",
+        "value": "google_images",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Images as key-value pairs. See all available parameters at [Google Images Docs](https://www.searchapi.io/docs/google-images).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Images Light",
+        "value": "google_images_light",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Images Light as key-value pairs. See all available parameters at [Google Images Light Docs](https://www.searchapi.io/docs/google-images-light-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Lens",
+        "value": "google_lens",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Lens as key-value pairs. See all available parameters at [Google Lens Docs](https://www.searchapi.io/docs/google-lens).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google News",
+        "value": "google_news",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google News as key-value pairs. See all available parameters at [Google News Docs](https://www.searchapi.io/docs/google-news).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google News Light",
+        "value": "google_news_light",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google News Light as key-value pairs. See all available parameters at [Google News Light Docs](https://www.searchapi.io/docs/google-news-light-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google News Portal",
+        "value": "google_news_portal",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google News Portal as key-value pairs. See all available parameters at [Google News Portal Docs](https://www.searchapi.io/docs/google-news-portal-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Jobs",
+        "value": "google_jobs",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Jobs as key-value pairs. See all available parameters at [Google Jobs Docs](https://www.searchapi.io/docs/google-jobs).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Events",
+        "value": "google_events",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Events as key-value pairs. See all available parameters at [Google Events Docs](https://www.searchapi.io/docs/google-events-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Autocomplete",
+        "value": "google_autocomplete",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Autocomplete as key-value pairs. See all available parameters at [Google Autocomplete Docs](https://www.searchapi.io/docs/google-autocomplete).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Trends",
+        "value": "google_trends",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Trends as key-value pairs. See all available parameters at [Google Trends Docs](https://www.searchapi.io/docs/google-trends).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Trending Now",
+        "value": "google_trends_trending_now",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Trending Now as key-value pairs. See all available parameters at [Google Trending Now Docs](https://www.searchapi.io/docs/google-trends-trending-now-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Trending Now News",
+        "value": "google_trends_trending_now_news",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Trending Now News as key-value pairs. See all available parameters at [Google Trending Now News Docs](https://www.searchapi.io/docs/google-trends-trending-now-news-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Trends Autocomplete",
+        "value": "google_trends_autocomplete",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Trends Autocomplete as key-value pairs. See all available parameters at [Google Trends Autocomplete Docs](https://www.searchapi.io/docs/google-trends-autocomplete).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Scholar",
+        "value": "google_scholar",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Scholar as key-value pairs. See all available parameters at [Google Scholar Docs](https://www.searchapi.io/docs/google-scholar).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Scholar Author",
+        "value": "google_scholar_author",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Scholar Author as key-value pairs. See all available parameters at [Google Scholar Author Docs](https://www.searchapi.io/docs/google-scholar-author).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Scholar Cite",
+        "value": "google_scholar_cite",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Scholar Cite as key-value pairs. See all available parameters at [Google Scholar Cite Docs](https://www.searchapi.io/docs/google-scholar-cite).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Forums",
+        "value": "google_forums",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Forums as key-value pairs. See all available parameters at [Google Forums Docs](https://www.searchapi.io/docs/google-forums-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Finance",
+        "value": "google_finance",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Finance as key-value pairs. See all available parameters at [Google Finance Docs](https://www.searchapi.io/docs/google-finance).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Patents",
+        "value": "google_patents",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Patents as key-value pairs. See all available parameters at [Google Patents Docs](https://www.searchapi.io/docs/google-patents).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Patents Details",
+        "value": "google_patents_details",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Patents Details as key-value pairs. See all available parameters at [Google Patents Details Docs](https://www.searchapi.io/docs/google-patents-details).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Books",
+        "value": "google_books",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Books as key-value pairs. See all available parameters at [Google Books Docs](https://www.searchapi.io/docs/google-books-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Local",
+        "value": "google_local",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Local as key-value pairs. See all available parameters at [Google Local Docs](https://www.searchapi.io/docs/google-local-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Place",
+        "value": "google_place",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Place as key-value pairs. See all available parameters at [Google Place Docs](https://www.searchapi.io/docs/google-place-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Airbnb",
+        "value": "airbnb",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Airbnb as key-value pairs. See all available parameters at [Airbnb Docs](https://www.searchapi.io/docs/airbnb-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Airbnb Property",
+        "value": "airbnb_property",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Airbnb Property as key-value pairs. See all available parameters at [Airbnb Property Docs](https://www.searchapi.io/docs/airbnb-property-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Airbnb Property Reviews",
+        "value": "airbnb_property_reviews",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Airbnb Property Reviews as key-value pairs. See all available parameters at [Airbnb Property Reviews Docs](https://www.searchapi.io/docs/airbnb-property-reviews-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Bing",
+        "value": "bing",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Bing as key-value pairs. See all available parameters at [Bing Docs](https://www.searchapi.io/docs/bing).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Bing Images",
+        "value": "bing_images",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Bing Images as key-value pairs. See all available parameters at [Bing Images Docs](https://www.searchapi.io/docs/bing-images-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Bing Videos",
+        "value": "bing_videos",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Bing Videos as key-value pairs. See all available parameters at [Bing Videos Docs](https://www.searchapi.io/docs/bing-videos-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Bing News",
+        "value": "bing_news",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Bing News as key-value pairs. See all available parameters at [Bing News Docs](https://www.searchapi.io/docs/bing-news).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Bing Shopping",
+        "value": "bing_shopping",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Bing Shopping as key-value pairs. See all available parameters at [Bing Shopping Docs](https://www.searchapi.io/docs/bing-shopping-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Baidu",
+        "value": "baidu",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Baidu as key-value pairs. See all available parameters at [Baidu Docs](https://www.searchapi.io/docs/baidu).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Naver",
+        "value": "naver",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Naver as key-value pairs. See all available parameters at [Naver Docs](https://www.searchapi.io/docs/naver-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Yahoo Search",
+        "value": "yahoo",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Yahoo Search as key-value pairs. See all available parameters at [Yahoo Search Docs](https://www.searchapi.io/docs/yahoo-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Meta Ad Library",
+        "value": "meta_ad_library",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Meta Ad Library as key-value pairs. See all available parameters at [Meta Ad Library Docs](https://www.searchapi.io/docs/meta-ad-library-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Meta Ad Library Page Search",
+        "value": "meta_ad_library_page_search",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Meta Ad Library Page Search as key-value pairs. See all available parameters at [Meta Ad Library Page Search Docs](https://www.searchapi.io/docs/meta-ad-library-page-search-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Meta Ad Library Ad Details",
+        "value": "meta_ad_library_ad_details",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Meta Ad Library Ad Details as key-value pairs. See all available parameters at [Meta Ad Library Ad Details Docs](https://www.searchapi.io/docs/meta-ad-library-ad-details-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Meta Ad Library Page Info",
+        "value": "meta_ad_library_page_info",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Meta Ad Library Page Info as key-value pairs. See all available parameters at [Meta Ad Library Page Info Docs](https://www.searchapi.io/docs/meta-ad-library-page-info-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Linkedin Ad Library",
+        "value": "linkedin_ad_library",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Linkedin Ad Library as key-value pairs. See all available parameters at [Linkedin Ad Library Docs](https://www.searchapi.io/docs/linkedin-ad-library-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Amazon Search",
+        "value": "amazon_search",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Amazon Search as key-value pairs. See all available parameters at [Amazon Search Docs](https://www.searchapi.io/docs/amazon-search).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Amazon Product",
+        "value": "amazon_product",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Amazon Product as key-value pairs. See all available parameters at [Amazon Product Docs](https://www.searchapi.io/docs/amazon-product).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Amazon Offers",
+        "value": "amazon_offers",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Amazon Offers as key-value pairs. See all available parameters at [Amazon Offers Docs](https://www.searchapi.io/docs/amazon-offers-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Shein Search",
+        "value": "shein_search",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Shein Search as key-value pairs. See all available parameters at [Shein Search Docs](https://www.searchapi.io/docs/shein-search-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Shein Product",
+        "value": "shein_product",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Shein Product as key-value pairs. See all available parameters at [Shein Product Docs](https://www.searchapi.io/docs/shein-product-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "eBay Search",
+        "value": "ebay_search",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for eBay Search as key-value pairs. See all available parameters at [eBay Search Docs](https://www.searchapi.io/docs/ebay-search-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "eBay Product",
+        "value": "ebay_product",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for eBay Product as key-value pairs. See all available parameters at [eBay Product Docs](https://www.searchapi.io/docs/ebay-product-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Play Store",
+        "value": "google_play_store",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Play Store as key-value pairs. See all available parameters at [Google Play Store Docs](https://www.searchapi.io/docs/google-play-store).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Google Play Product",
+        "value": "google_play_product",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Google Play Product as key-value pairs. See all available parameters at [Google Play Product Docs](https://www.searchapi.io/docs/google-play-product).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Apple App Store",
+        "value": "apple_app_store",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Apple App Store as key-value pairs. See all available parameters at [Apple App Store Docs](https://www.searchapi.io/docs/apple-app-store).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Apple Product",
+        "value": "apple_product",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Apple Product as key-value pairs. See all available parameters at [Apple Product Docs](https://www.searchapi.io/docs/apple-product-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Apple Product Reviews",
+        "value": "apple_product_reviews",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Apple Product Reviews as key-value pairs. See all available parameters at [Apple Product Reviews Docs](https://www.searchapi.io/docs/apple-app-store-reviews-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Apple Top Charts",
+        "value": "apple_app_store_top_charts",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Apple Top Charts as key-value pairs. See all available parameters at [Apple Top Charts Docs](https://www.searchapi.io/docs/apple-app-store-top-charts-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Yandex",
+        "value": "yandex",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Yandex as key-value pairs. See all available parameters at [Yandex Docs](https://www.searchapi.io/docs/yandex-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Yandex Reverse Image",
+        "value": "yandex_reverse_image",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Yandex Reverse Image as key-value pairs. See all available parameters at [Yandex Reverse Image Docs](https://www.searchapi.io/docs/yandex-reverse-image-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "DuckDuckGo",
+        "value": "duckduckgo",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for DuckDuckGo as key-value pairs. See all available parameters at [DuckDuckGo Docs](https://www.searchapi.io/docs/duckduckgo-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "DuckDuckGo Light",
+        "value": "duckduckgo_light",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for DuckDuckGo Light as key-value pairs. See all available parameters at [DuckDuckGo Light Docs](https://www.searchapi.io/docs/duckduckgo-light-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Walmart Search",
+        "value": "walmart_search",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Walmart Search as key-value pairs. See all available parameters at [Walmart Search Docs](https://www.searchapi.io/docs/walmart-search-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Walmart Product",
+        "value": "walmart_product",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Walmart Product as key-value pairs. See all available parameters at [Walmart Product Docs](https://www.searchapi.io/docs/walmart-product-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Walmart Reviews",
+        "value": "walmart_reviews",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Walmart Reviews as key-value pairs. See all available parameters at [Walmart Reviews Docs](https://www.searchapi.io/docs/walmart-reviews-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "YouTube",
+        "value": "youtube",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for YouTube as key-value pairs. See all available parameters at [YouTube Docs](https://www.searchapi.io/docs/youtube).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "YouTube Transcripts",
+        "value": "youtube_transcripts",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for YouTube Transcripts as key-value pairs. See all available parameters at [YouTube Transcripts Docs](https://www.searchapi.io/docs/youtube-transcripts).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "YouTube Video",
+        "value": "youtube_video",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for YouTube Video as key-value pairs. See all available parameters at [YouTube Video Docs](https://www.searchapi.io/docs/youtube-video).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "YouTube Comments",
+        "value": "youtube_comments",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for YouTube Comments as key-value pairs. See all available parameters at [YouTube Comments Docs](https://www.searchapi.io/docs/youtube-comments).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "YouTube Channel",
+        "value": "youtube_channel",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for YouTube Channel as key-value pairs. See all available parameters at [YouTube Channel Docs](https://www.searchapi.io/docs/youtube-channel).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "YouTube Channel Videos",
+        "value": "youtube_channel_videos",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for YouTube Channel Videos as key-value pairs. See all available parameters at [YouTube Channel Videos Docs](https://www.searchapi.io/docs/youtube-channel-videos-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "YouTube Trends",
+        "value": "youtube_trends",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for YouTube Trends as key-value pairs. See all available parameters at [YouTube Trends Docs](https://www.searchapi.io/docs/youtube-trends).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Reddit Ad Library",
+        "value": "reddit_ad_library",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Reddit Ad Library as key-value pairs. See all available parameters at [Reddit Ad Library Docs](https://www.searchapi.io/docs/reddit-ad-library-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "TikTok Ads Library",
+        "value": "tiktok_ads_library",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for TikTok Ads Library as key-value pairs. See all available parameters at [TikTok Ads Library Docs](https://www.searchapi.io/docs/tiktok-ads-library-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Tiktok Ads Advertiser Search",
+        "value": "tiktok_ads_library_advertiser_search",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Tiktok Ads Advertiser Search as key-value pairs. See all available parameters at [Tiktok Ads Advertiser Search Docs](https://www.searchapi.io/docs/tiktok-ads-library-advertiser-search-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "TikTok Profile",
+        "value": "tiktok_profile",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for TikTok Profile as key-value pairs. See all available parameters at [TikTok Profile Docs](https://www.searchapi.io/docs/tiktok-profile-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Facebook Business Page",
+        "value": "facebook_business_page",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Facebook Business Page as key-value pairs. See all available parameters at [Facebook Business Page Docs](https://www.searchapi.io/docs/facebook-business-page-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Facebook Business Page Reviews",
+        "value": "facebook_business_page_reviews",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Facebook Business Page Reviews as key-value pairs. See all available parameters at [Facebook Business Page Reviews Docs](https://www.searchapi.io/docs/facebook-business-page-reviews-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Instagram Profile",
+        "value": "instagram_profile",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Instagram Profile as key-value pairs. See all available parameters at [Instagram Profile Docs](https://www.searchapi.io/docs/instagram-profile-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Tripadvisor",
+        "value": "tripadvisor",
+        "nested": [
+          {
+            "name": "params",
+            "label": "Engine Parameters",
+            "type": "array",
+            "help": "Add parameters for Tripadvisor as key-value pairs. See all available parameters at [Tripadvisor Docs](https://www.searchapi.io/docs/tripadvisor-api).",
+            "spec": {
+              "label": "Parameter",
+              "type": "collection",
+              "spec": [
+                {
+                  "name": "key",
+                  "label": "Key",
+                  "type": "text"
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "type": "text"
+                }
+              ]
+            },
+            "labels": {
+              "add": "Add parameter"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

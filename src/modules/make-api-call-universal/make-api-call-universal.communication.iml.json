@@ -1,0 +1,19 @@
+{
+    "qs": {
+        "engine": "{{parameters.engine}}",
+        "{{...}}": "{{toCollection(parameters.params, 'key', 'value')}}"
+    },
+    "url": "https://www.searchapi.io/api/v1/search",
+    "type": "text",
+    "method": "GET",
+    "headers": {
+        "{{...}}": "{{toCollection(parameters.headers, 'key', 'value')}}"
+    },
+    "response": {
+        "output": {
+            "body": "{{body}}",
+            "headers": "{{headers}}",
+            "statusCode": "{{statusCode}}"
+        }
+    }
+}

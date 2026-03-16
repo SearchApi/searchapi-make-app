@@ -9,7 +9,7 @@
     "components": {
         "connection": {
             "connection1": {
-                "label": "Unnamed",
+                "label": "SearchApi Connection",
                 "connectionType": "basic",
                 "codeFiles": {
                     "communication": "connections/connection1/connection1.communication.iml.json",
@@ -19,19 +19,19 @@
             }
         },
         "module": {
-            "googleSearch": {
-                "label": "Google Search",
-                "description": "Search on google",
-                "moduleType": "search",
+            "makeApiCallUniversal": {
+                "label": "Make an API Call",
+                "description": "Search any engine via SearchApi.io. Select your engine, then add parameters from the docs.",
+                "moduleType": "universal",
                 "connection": "connection1",
                 "altConnection": null,
                 "codeFiles": {
-                    "communication": "modules/google-search/google-search.communication.iml.json",
-                    "staticParams": "modules/google-search/google-search.static-params.iml.json",
-                    "mappableParams": "modules/google-search/google-search.mappable-params.iml.json",
-                    "interface": "modules/google-search/google-search.interface.iml.json",
-                    "samples": "modules/google-search/google-search.samples.iml.json",
-                    "scope": "modules/google-search/google-search.scope.iml.json"
+                    "communication": "modules/make-api-call-universal/make-api-call-universal.communication.iml.json",
+                    "staticParams": "modules/make-api-call-universal/make-api-call-universal.static-params.iml.json",
+                    "mappableParams": "modules/make-api-call-universal/make-api-call-universal.mappable-params.iml.json",
+                    "interface": "modules/make-api-call-universal/make-api-call-universal.interface.iml.json",
+                    "samples": "modules/make-api-call-universal/make-api-call-universal.samples.iml.json",
+                    "scope": "modules/make-api-call-universal/make-api-call-universal.scope.iml.json"
                 }
             }
         },
@@ -54,15 +54,15 @@
                 ],
                 "module": [
                     {
-                        "local": "googleSearch",
-                        "remote": "googleSearch"
+                        "local": "makeApiCallUniversal",
+                        "remote": "makeApiCallUniversal"
                     }
                 ],
                 "function": [],
                 "rpc": [],
                 "webhook": []
             },
-            "apikeyFile": "../.secrets/apikey"
+            "apikeyFile": "../.secrets/apikey2"
         }
     ]
 }

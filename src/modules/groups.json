@@ -1,8 +1,8 @@
 [
-	{
-		"label": "Other",
-		"modules": [
-			"googleSearch"
-		]
-	}
+    {
+        "label": "SearchApi",
+        "modules": [
+            "makeApiCallUniversal"
+        ]
+    }
 ]

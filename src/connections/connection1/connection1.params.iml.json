@@ -4,6 +4,7 @@
         "type": "password",
         "label": "API Key",
         "required": true,
-        "editable": true
+        "editable": true,
+        "help": "Your SearchApi API key. Find it at https://www.searchapi.io/ after login."
     }
 ]
