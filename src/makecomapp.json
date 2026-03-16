@@ -19,39 +19,8 @@
             }
         },
         "module": {
-            "makeApiCall": {
-                "label": "Make an API Call",
-                "description": "Make a request to any SearchApi endpoint",
-                "moduleType": "action",
-                "actionCrud": "read",
-                "connection": "connection1",
-                "altConnection": null,
-                "codeFiles": {
-                    "communication": "modules/make-api-call/make-api-call.communication.iml.json",
-                    "staticParams": "modules/make-api-call/make-api-call.static-params.iml.json",
-                    "mappableParams": "modules/make-api-call/make-api-call.mappable-params.iml.json",
-                    "interface": "modules/make-api-call/make-api-call.interface.iml.json",
-                    "samples": "modules/make-api-call/make-api-call.samples.iml.json",
-                    "scope": "modules/make-api-call/make-api-call.scope.iml.json"
-                }
-            },
-            "makeApiCallFinal": {
-                "label": "Make an Api Call",
-                "description": "Use this module if your desired engine is not an app module.",
-                "moduleType": "universal",
-                "connection": null,
-                "altConnection": null,
-                "codeFiles": {
-                    "communication": "modules/make-api-call-final/make-api-call-final.communication.iml.json",
-                    "staticParams": "modules/make-api-call-final/make-api-call-final.static-params.iml.json",
-                    "mappableParams": "modules/make-api-call-final/make-api-call-final.mappable-params.iml.json",
-                    "interface": "modules/make-api-call-final/make-api-call-final.interface.iml.json",
-                    "samples": "modules/make-api-call-final/make-api-call-final.samples.iml.json",
-                    "scope": "modules/make-api-call-final/make-api-call-final.scope.iml.json"
-                }
-            },
             "makeApiCallUniversal": {
-                "label": "Make an Api Call",
+                "label": "Make an API Call",
                 "description": "Search any engine via SearchApi.io. Select your engine, then add parameters from the docs.",
                 "moduleType": "universal",
                 "connection": "connection1",
@@ -84,14 +53,6 @@
                     }
                 ],
                 "module": [
-                    {
-                        "local": "makeApiCall",
-                        "remote": "makeApiCall"
-                    },
-                    {
-                        "local": "makeApiCallFinal",
-                        "remote": "makeApiCallFinal"
-                    },
                     {
                         "local": "makeApiCallUniversal",
                         "remote": "makeApiCallUniversal"

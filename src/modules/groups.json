@@ -1,10 +1,8 @@
 [
-	{
-		"label": "SearchApi",
-		"modules": [
-			"makeApiCall",
-			"makeApiCallUniversal",
-			"makeApiCallFinal"
-		]
-	}
+    {
+        "label": "SearchApi",
+        "modules": [
+            "makeApiCallUniversal"
+        ]
+    }
 ]
