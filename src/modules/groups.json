@@ -1,6 +1,6 @@
 [
 	{
-		"label": "SearchAPI",
+		"label": "SearchApi",
 		"modules": [
 			"makeApiCall",
 			"makeApiCallUniversal",

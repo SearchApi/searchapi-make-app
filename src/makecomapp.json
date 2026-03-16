@@ -9,7 +9,7 @@
     "components": {
         "connection": {
             "connection1": {
-                "label": "SearchAPI Connection",
+                "label": "SearchApi Connection",
                 "connectionType": "basic",
                 "codeFiles": {
                     "communication": "connections/connection1/connection1.communication.iml.json",
@@ -21,7 +21,7 @@
         "module": {
             "makeApiCall": {
                 "label": "Make an API Call",
-                "description": "Make a request to any SearchAPI endpoint",
+                "description": "Make a request to any SearchApi endpoint",
                 "moduleType": "action",
                 "actionCrud": "read",
                 "connection": "connection1",
@@ -52,7 +52,7 @@
             },
             "makeApiCallUniversal": {
                 "label": "Make an Api Call",
-                "description": "Search any engine via SearchAPI.io. Select your engine, then add parameters from the docs.",
+                "description": "Search any engine via SearchApi.io. Select your engine, then add parameters from the docs.",
                 "moduleType": "universal",
                 "connection": "connection1",
                 "altConnection": null,
