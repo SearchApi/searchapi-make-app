@@ -1,11 +1,11 @@
 {
     "qs": {
-        "{{...}}": "{{toCollection(parameters.qs, 'key', 'value')}}"
+        "engine": "{{parameters.engine}}",
+        "{{...}}": "{{toCollection(parameters.params, 'key', 'value')}}"
     },
-    "url": "https://www.example.com/api{{parameters.url}}",  // Defines the fixed base URL and maps the relative path URL from the user.
-    "body": "{{parameters.body}}",
+    "url": "https://www.searchapi.io/api/v1/search",
     "type": "text",
-    "method": "{{parameters.method}}",
+    "method": "GET",
     "headers": {
         "{{...}}": "{{toCollection(parameters.headers, 'key', 'value')}}"
     },

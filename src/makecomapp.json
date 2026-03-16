@@ -52,9 +52,9 @@
             },
             "makeApiCallUniversal": {
                 "label": "Make an Api Call",
-                "description": "This module can be used to make any request to searchapi. \n\nUse it if the desired engine does not have it's own module.",
+                "description": "Search any engine via SearchAPI.io. Select your engine, then add parameters from the docs.",
                 "moduleType": "universal",
-                "connection": null,
+                "connection": "connection1",
                 "altConnection": null,
                 "codeFiles": {
                     "communication": "modules/make-api-call-universal/make-api-call-universal.communication.iml.json",
